@@ -1,0 +1,98 @@
+Author: Tawana Thompson
+Date created: July 3, 2025
+Course:ITT103
+GitHub code:
+
+
+### Purpose of the Program
+
+The **Hospital Management System** is designed to help manage hospital operations, such as patient and doctor registration, appointment scheduling, bill generation, and appointment cancellation. It streamlines the following processes:
+
+- **Registering new patients and doctors**.
+- **Booking and canceling appointments**.
+- **Viewing patient profiles and doctor schedules**.
+- **Generating bills** for appointments, including consultation and additional service fees.
+- **Listing all patients, doctors, and appointments**.
+
+The system is console-based, where users can navigate through a menu and interact with the various features of the program.
+
+---
+
+### How to Run the Program
+
+1. **Clone the Repository**:
+   First, clone the repository to your local machine using the following command in your terminal or command prompt:
+
+
+Assumptions or Limitations Regarding Its Operation
+Data Persistence:
+
+The system stores data in a JSON file. If the file is deleted or corrupted, all data will be lost. For production use, you may consider adding backup mechanisms or using a database system.
+
+No User Authentication:
+
+There is no login or user authentication system. Anyone with access to the terminal can interact with the system. In a real-world scenario, you would need to add an authentication mechanism.
+
+Limited Error Handling:
+
+The system handles basic errors, such as invalid input, but additional error handling could be added to address issues such as data corruption, or conflicts during appointment booking.
+
+No Multi-user Support:
+
+This version supports only a single user interacting with the system. It does not allow multiple users or simultaneous access from different terminals or devices.
+
+No External System Integration:
+
+The system does not connect to any external APIs, databases, or services (e.g., for real-time doctor availability or insurance integration). Adding such integrations would require modifications.
+
+
+Features Overview
+Register New Patient: Register a new patient by entering their name, age, and gender.
+
+Register New Doctor: Register a new doctor by entering their name, age, gender, and specialty.
+
+Book Appointment: Schedule an appointment between a patient and a doctor.
+
+View Patient Profile: View the details of a registered patient, including their appointments.
+
+View Doctor Schedule: View a doctor's schedule and available time slots.
+
+Generate Bill: Generate a bill for a booked appointment, including the consultation fee and additional service fees (e.g., tests, medication).
+
+Cancel Appointment: Cancel a previously booked appointment.
+
+List All Patients: List all registered patients.
+
+List All Doctors: List all registered doctors.
+
+List All Appointments: List all booked appointments.
+
+Billing System
+The Billing System generates a detailed receipt for each appointment, which includes:
+
+Consultation Fee: A fixed fee of JMD$ 3000.
+
+Additional Service Fees: Manually entered for services like tests, medications, or additional treatments.
+
+Total: The total bill, which is the sum of the consultation fee and additional service fees.
+
+A formatted receipt is displayed on the console with the following details:
+
+Hospital Name: Healthcare Hospital
+
+Appointment Details: Patient and doctor names, appointment date and time
+
+Consultation Fee and Additional Fees: Listed separately
+
+Total: The final total amount due.
+
+
+future Improvements
+Data Backup: Implement automatic backups for data in case of file corruption.
+
+Multi-User Support: Add user authentication and multiple user support.
+
+Integration with External Systems: Add integration with healthcare APIs or external systems for real-time doctor availability or insurance processing.
+
+   ```bash
+   git clone [Your GitHub Repository URL]
